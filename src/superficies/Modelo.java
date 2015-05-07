@@ -11,103 +11,93 @@ package superficies;
  */
 public class Modelo {
 
-    float squareArea;
-    float sideLength;
-    float sideHeight;
-    float rectangleArea;
-    float baseLength;
-    float height;
-    float triangleArea;
-    float radius;
-    float circleArea;
+    public float height,
+            /**
+             *
+             */
+            length,
+            /**
+             *
+             */
+            area;
 
+    /**
+     * Circle and Square Constructor
+     *
+     * @param length
+     * @param area
+     */
+    public Modelo(float length, float area) {
+        this.length = length;
+        this.area = area;
+    }
+
+    /**
+     * Triangle and square constructor
+     * 
+     *
+     * @param height
+     * @param length
+     * @param area
+     */
+    public Modelo(float height, float length, float area) {
+        this.height = height;
+        this.length = length;
+        this.area = area;
+    }
+
+    /**
+     *
+     */
     public Modelo() {
     }
 
-    public Modelo(float squareArea, float sideLength, float sideHeight, float rectangleArea, float baseLength, float height, float triangleArea, float radius, float circleArea) {
-        this.squareArea = squareArea;
-        this.sideLength = sideLength;
-        this.sideHeight = sideHeight;
-        this.rectangleArea = rectangleArea;
-        this.baseLength = baseLength;
-        this.height = height;
-        this.triangleArea = triangleArea;
-        this.radius = radius;
-        this.circleArea = circleArea;
-    }
-
-    public float getSquareArea() {
-        return squareArea;
-    }
-
-    public float getSideLength() {
-        return sideLength;
-    }
-
-    public float getSideHeight() {
-        return sideHeight;
-    }
-
-    public float getRectangleArea() {
-        return rectangleArea;
-    }
-
-    public float getBaseLength() {
-        return baseLength;
-    }
-
+    /**
+     *
+     * @return
+     */
     public float getHeight() {
         return height;
     }
 
-    public float getTriangleArea() {
-        return triangleArea;
-    }
-
-    public float getRadius() {
-        return radius;
-    }
-
-    public float getCircleArea() {
-        return circleArea;
-    }
-
-    public void setSquareArea(float squareArea) {
-        this.squareArea = squareArea;
-    }
-
-    public void setSideLength(float sideLength) {
-        this.sideLength = sideLength;
-    }
-
-    public void setSideHeight(float sideHeight) {
-        this.sideHeight = sideHeight;
-    }
-
-    public void setRectangleArea(float rectangleArea) {
-        this.rectangleArea = rectangleArea;
-    }
-
-    public void setBaseLength(float baseLength) {
-        this.baseLength = baseLength;
-    }
-
+    /**
+     *
+     * @param height
+     */
     public void setHeight(float height) {
         this.height = height;
     }
 
-    public void setTriangleArea(float triangleArea) {
-        this.triangleArea = triangleArea;
+    /**
+     *
+     * @return
+     */
+    public float getLength() {
+        return length;
     }
 
-    public void setRadius(float radius) {
-        this.radius = radius;
+    /**
+     *
+     * @param length
+     */
+    public void setLength(float length) {
+        this.length = length;
     }
 
-    public void setCircleArea(float circleArea) {
-        this.circleArea = circleArea;
+    /**
+     *
+     * @return
+     */
+    public float getArea() {
+        return area;
     }
-    
-    
+
+    /**
+     *
+     * @param area
+     */
+    public void setArea(float area) {
+        this.area = area;
+    }
 
 }
