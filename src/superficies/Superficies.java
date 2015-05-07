@@ -20,23 +20,21 @@ public class Superficies {
         Vista vis = new Vista();
         sc = new Scanner(System.in);
 
-        System.out.println("What shape would you like to find the area of? (square, circle, triangle, rectangle):");
-        shapeType = sc.nextLine();
-        System.out.println("You said: " + shapeType);
 
         if (shapeType.equals("square")) {
-            //add area calculations for square
+            /*add area calculations for square
             float squareArea;
             float sideLength;
 
             System.out.println("what is the side length?");
             sideLength = sc.nextFloat();
             squareArea = sideLength * sideLength;
-            System.out.println("The area for your square: " + squareArea);
+            System.out.println("The area for your square: " + squareArea);*/
+            vis.showSquare(mod);
 
         }
         if (shapeType.equals("rectangle")) {
-            //add area calculations for rectangle here
+            /*add area calculations for rectangle here
             float sideLength;
             float sideHeight;
             float rectangleArea;
@@ -46,11 +44,12 @@ public class Superficies {
             System.out.println("What is the rectangles height?");
             sideHeight = sc.nextFloat();
             rectangleArea = sideLength * sideHeight;
-            System.out.println("The area for your rectangle is: " + rectangleArea);
+            System.out.println("The area for your rectangle is: " + rectangleArea);*/
+            vis.showRectangle(mod);
 
         }
         if (shapeType.equals("triangle")) {
-            //add area calculations for triangle here
+            /*add area calculations for triangle here
             float baseLength;
             float height;
             float triangleArea;
@@ -60,11 +59,12 @@ public class Superficies {
             System.out.println("What is the height of the triangle?");
             height = sc.nextFloat();
             triangleArea = (float) (0.5 * baseLength * height);
-            System.out.println("Your triangles area is: " + triangleArea);
+            System.out.println("Your triangles area is: " + triangleArea);*/
+            vis.showTriangle(mod);
 
         }
         if (shapeType.equals("circle")) {
-            //add area calculations for a circle here
+            /*add area calculations for a circle here
             float radius;
             float circleArea;
 
@@ -72,7 +72,8 @@ public class Superficies {
             radius = sc.nextFloat();
             circleArea = radius * radius;
             circleArea = (float) (3.14159265 * circleArea);
-            System.out.println("Your Circles area is " + circleArea);
+            System.out.println("Your Circles area is " + circleArea);*/
+            vis.showCircle(mod);
 
         }
 
