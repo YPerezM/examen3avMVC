@@ -16,7 +16,8 @@ public class Superficies {
      */
     public static void main(String[] args) {
         String shapeType;
-
+        Modelo mod = new Modelo();
+        Vista vis = new Vista();
         sc = new Scanner(System.in);
 
         System.out.println("What shape would you like to find the area of? (square, circle, triangle, rectangle):");
