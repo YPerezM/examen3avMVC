@@ -18,7 +18,7 @@ public class Vista {
      *
      * @param controlador
      */
-    public void verCuadrado(Modelo controlador) {
+    public void showSquare(Modelo controlador) {
         System.out.println("Si el lado es: " + controlador.getLength() + " el area sera: " + controlador.getArea());
     }
 
@@ -27,25 +27,25 @@ public class Vista {
      *
      * @param controlador
      */
-    public void verRectangulo(Modelo controlador) {
+    public void showRectangle(Modelo controlador) {
         System.out.println("Si la base es: " + controlador.getLength() + " y la altura: " + controlador.getHeight() + " el area sera: " + controlador.getArea());
     }
 
     /**
-     * Salida por pantalla para el triangulo
+     * System.out Triangle
      *
      * @param controlador
      */
-    public void verTriangulo(Modelo controlador) {
+    public void showTriangle(Modelo controlador) {
         System.out.println("Si la base es: " + controlador.getLength() + " y la altura: " + controlador.getHeight() + " el area sera: " + controlador.getArea());
     }
 
     /**
-     * Salida por pantalla para el circulo
+     * System.out Circle
      *
      * @param controlador
      */
-    public void verCirculo(Modelo controlador) {
+    public void showCircle(Modelo controlador) {
         System.out.println("Si el radio es: " + controlador.getLength() + " el area sera: " + controlador.getArea());
     }
 
